@@ -1,6 +1,6 @@
 
 
-/* Sección de Empresas Confiables */
+/* Reliables Companies Secction */
 .trusted-companies {
     text-align: center;
     padding: 40px 20px;
@@ -8,13 +8,13 @@
     overflow: hidden;
 }
 
-/* Contenedor centrado */
+/* Div Center */
 .companies-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* Título */
+/* Title */
 .trusted-companies h3 {
     font-size: 1rem;
     color: #757575;
@@ -33,7 +33,7 @@
     flex-wrap: wrap;
 }
 
-/* Cada empresa con su logo y nombre */
+/* Comapny name properties */
 .company {
     display: flex;
     flex-direction: column;
@@ -48,12 +48,12 @@
     display: block;
 }
 
-/* Efecto Hover */
+/*  Hover */
 .company img:hover {
     transform: scale(1.1);
 }
 
-/* Nombre de la empresa */
+/*Company name */
 .company span {
     font-size: 0.9rem;
     color: #333;
@@ -74,7 +74,7 @@
     }
 }
 
-/* Animación Marquee */
+/*  Marquee Animation when user is on a mobile screen*/
 @keyframes marquee {
     from {
         transform: translateX(100%);

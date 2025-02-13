@@ -1,14 +1,29 @@
-/* Footer General */
-.site-footer {
+/* ====================================== */
+/* Footer General Styling */
+/* ====================================== */
+
+/* Styles the overall footer section:
+   - Adds background color and padding.
+   - Sets a standard font size. */
+   .site-footer {
     background: #F9F9F9;
     color: #333;
     padding: 50px 20px;
     font-size: 0.9rem;
 }
+
+/* Styles for the logo title */
 .logo-title {
     color: black;
 }
 
+/* ====================================== */
+/* Footer Layout */
+/* ====================================== */
+
+/* Organizes the footer into a flexible layout:
+   - Allows wrapping on smaller screens.
+   - Aligns content with spacing between elements. */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -18,27 +33,38 @@
     gap: 50px;
 }
 
+/* ====================================== */
+/* Footer Branding (Company Info) */
+/* ====================================== */
 
+/* Limits the width of the branding section */
 .footer-brand {
     max-width: 300px;
 }
 
+/* Sets the size for the brand logo */
 .footer-brand img {
     width: 160px;
     margin-bottom: 15px;
 }
 
+/* Styles the descriptive text under the logo */
 .footer-brand p {
     font-size: 0.85rem;
     color: #666;
 }
 
-/* Newsletter */
+/* ====================================== */
+/* Newsletter Subscription Form */
+/* ====================================== */
+
+/* Styles for the newsletter title */
 .newsletter p {
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
+/* Styles the input field and button */
 .newsletter-input {
     display: flex;
     align-items: center;
@@ -48,6 +74,7 @@
     padding: 8px 12px;
 }
 
+/* Input field for entering email */
 .newsletter-input input {
     border: none;
     outline: none;
@@ -55,6 +82,7 @@
     padding: 8px;
 }
 
+/* Submit button inside the newsletter form */
 .newsletter-input button {
     background: transparent;
     border: none;
@@ -63,28 +91,42 @@
     color: #FF5733;
 }
 
-/* Sección de Enlaces */
+/* ====================================== */
+/* Footer Links Section */
+/* ====================================== */
+
+/* Organizes navigation links inside the footer:
+   - Wraps elements when necessary.
+   - Distributes links evenly across the footer. */
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* 🔹 Distribuye los enlaces uniformemente */
+    justify-content: space-evenly;
     width: 100%;
     gap: 40px;
 }
 
-/* Columnas de enlaces */
+/* ====================================== */
+/* Footer Link Columns */
+/* ====================================== */
+
+/* Styles each column of links:
+   - Adjusts width dynamically.
+   - Keeps minimum and maximum width constraints. */
 .footer-column {
     flex: 1;
     min-width: 200px;
     max-width: 250px;
 }
 
+/* Styles the headings inside each link column */
 .footer-column h4 {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
+/* Removes default list styling and adds spacing */
 .footer-column ul {
     list-style: none;
     padding: 0;
@@ -93,22 +135,28 @@
     gap: 12px;
 }
 
+/* Styles the links inside each footer column */
 .footer-column ul li a {
     color: #666;
     text-decoration: none;
-    transition: color;
     transition: color 0.3s, transform 0.2s;
     display: inline-block;
     padding: 5px 0;
 }
 
-
+/* Hover effect: color change and slight shift */
 .footer-column ul li a:hover {
     color: #FF5733;
     transform: translateX(4px);
 }
 
-/* Parte inferior del footer */
+/* ====================================== */
+/* Footer Bottom Section */
+/* ====================================== */
+
+/* Organizes bottom elements:
+   - Aligns them horizontally.
+   - Allows wrapping when needed. */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -122,39 +170,55 @@
     gap: 20px;
 }
 
-/* Enlaces legales */
+/* ====================================== */
+/* Legal Links */
+/* ====================================== */
+
+/* Arranges legal links like Terms & Privacy */
 .footer-links-bottom {
     display: flex;
     gap: 20px;
 }
 
+/* Styles the legal links */
 .footer-links-bottom a {
     color: #666;
     text-decoration: none;
     transition: color 0.3s;
 }
 
+/* Hover effect for legal links */
 .footer-links-bottom a:hover {
     color: #FF5733;
 }
 
-/* Redes Sociales */
+/* ====================================== */
+/* Social Media Icons */
+/* ====================================== */
+
+/* Arranges social media icons in a row */
 .social-icons {
     display: flex;
     gap: 15px;
 }
 
+/* Styles individual social media icons */
 .social-icons a {
     color: #666;
     font-size: 1.3rem;
     transition: color 0.3s;
 }
 
+/* Hover effect for social media icons */
 .social-icons a:hover {
     color: #FF5733;
 }
 
-/* Estado del sistema */
+/* ====================================== */
+/* System Status Indicator */
+/* ====================================== */
+
+/* Displays system status message */
 .system-status {
     display: flex;
     align-items: center;
@@ -162,6 +226,7 @@
     font-size: 0.85rem;
 }
 
+/* Small green dot indicating "All systems normal" */
 .status-dot {
     width: 10px;
     height: 10px;
@@ -170,11 +235,11 @@
     margin-right: 5px;
 }
 
-/* ========================= */
-/* RESPONSIVIDAD DEL FOOTER */
-/* ========================= */
+/* ====================================== */
+/* Responsive Design */
+/* ====================================== */
 
-/* 🔹 Para pantallas medianas (Tablets y laptops pequeñas) */
+/* Adjustments for tablets (≤ 1024px) */
 @media (max-width: 1024px) {
     .footer-container {
         flex-direction: column;
@@ -194,7 +259,7 @@
     }
 }
 
-/* 🔹 Para móviles (pantallas pequeñas) */
+/* Adjustments for mobile screens (≤ 768px) */
 @media (max-width: 768px) {
     .footer-container {
         text-align: center;
@@ -222,6 +287,7 @@
     }
 }
 
+/* Adjustments for very small screens (≤ 480px) */
 @media (max-width: 480px) {
     .footer-container {
         padding: 30px 10px;

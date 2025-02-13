@@ -1,5 +1,12 @@
-/* Sección Principal */
-.feature-section {
+/* ====================================== */
+/* Feature Section - Main Layout */
+/* ====================================== */
+
+/* Defines a two-column layout: 
+   - The first column (2fr) holds text content.
+   - The second column (1fr) holds a chart. 
+   - Adds spacing and centers the section. */
+   .feature-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -8,14 +15,24 @@
     margin: auto;
 }
 
-/* Contenedor de Contenido y Gráfico */
+/* ====================================== */
+/* Content and Chart Container */
+/* ====================================== */
+
+/* Organizes content inside the left section: 
+   - Uses a vertical flexbox layout.
+   - Adds spacing between elements. */
 .feature-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Título y Texto */
+/* ====================================== */
+/* Text and Titles Styling */
+/* ====================================== */
+
+/* Styles for a small badge label inside the content section. */
 .feature-content .badge {
     background: #F0F0F0;
     padding: 5px 10px;
@@ -24,22 +41,30 @@
     color: #666;
 }
 
+/* Main heading of the feature section */
 .feature-content h1 {
     font-size: 2.2rem;
     font-weight: bold;
     color: #333;
 }
 
+/* Highlights specific words inside the title */
 .feature-content .highlight {
     color: #008080;
 }
 
+/* Styles for the paragraph text inside the feature section */
 .feature-content p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 15px;
 }
 
+/* ====================================== */
+/* Call-To-Action Button */
+/* ====================================== */
+
+/* Primary action button */
 .cta-button {
     background: #008080;
     color: white;
@@ -50,11 +75,17 @@
     transition: background 0.3s;
 }
 
+/* Hover effect for the CTA button */
 .cta-button:hover {
     background: #E04B28;
 }
 
-/* Gráfico */
+/* ====================================== */
+/* Chart Container */
+/* ====================================== */
+
+/* Styles the container where the chart is displayed:
+   - Adds padding and a shadow effect. */
 .chart-container {
     width: 100%;
     height: 250px;
@@ -64,13 +95,18 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Tarjetas a la Derecha */
+/* ====================================== */
+/* Feature Cards (Right Section) */
+/* ====================================== */
+
+/* Organizes feature cards vertically */
 .feature-cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Styles for individual feature cards */
 .card {
     background: white;
     padding: 15px;
@@ -81,24 +117,31 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Icon size inside cards */
 .card .icon {
     font-size: 1.5rem;
 }
 
+/* Title inside the feature card */
 .card h3 {
     font-size: 1rem;
     font-weight: bold;
 }
 
+/* Description text inside the feature card */
 .card p {
     font-size: 0.85rem;
     color: #666;
 }
 
-/* RESPONSIVE */
+/* ====================================== */
+/* Responsive Design Adjustments */
+/* ====================================== */
+
+/* Adjusts layout for tablets (screens ≤ 1024px) */
 @media (max-width: 1024px) {
     .feature-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Converts the layout to a single column */
         text-align: center;
     }
 
@@ -111,11 +154,12 @@
     }
 
     .card {
-        flex-direction: column;
+        flex-direction: column; /* Stacks card content vertically */
         text-align: center;
     }
 }
 
+/* Adjusts layout for mobile devices (screens ≤ 768px) */
 @media (max-width: 768px) {
     .feature-section {
         padding: 30px 10px;
@@ -124,6 +168,8 @@
         padding: 0 10px;
     }
 }
+
+/* Adjusts layout for very small screens (screens ≤ 400px) */
 @media (max-width: 400px) {
     .feature-section {
         padding: 20px 5px;
@@ -143,7 +189,11 @@
     }
 }
 
-/* Contenedor del Efecto */
+/* ====================================== */
+/* Hover Effect Container */
+/* ====================================== */
+
+/* Wrapper for the hover effect on the grid */
 .hover-container {
     position: relative;
     width: 400px;
@@ -153,7 +203,11 @@
     overflow: hidden;
 }
 
-/* Patrón de puntos */
+/* ====================================== */
+/* Grid Pattern (Background Dots) */
+/* ====================================== */
+
+/* Creates a grid of dots */
 .grid-pattern {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -163,6 +217,7 @@
     height: 100%;
 }
 
+/* Individual dot inside the grid */
 .grid-pattern div {
     width: 8px;
     height: 8px;
@@ -171,7 +226,11 @@
     transition: background 0.3s;
 }
 
-/* Lupa */
+/* ====================================== */
+/* Magnifying Glass Effect */
+/* ====================================== */
+
+/* Defines the magnifying glass */
 .lupa {
     position: absolute;
     width: 80px;
@@ -184,7 +243,7 @@
     display: none;
 }
 
-/* Puntos resaltados en la lupa */
+/* Highlights dots when magnified */
 .grid-pattern div.highlight {
     background: #FF5733 !important;
 }

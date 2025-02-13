@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotter - AI Technology for Logistics</title>
-     <!-- Favicon en formato SVG -->
+     <!-- Favicon in SVG format-->
      <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-     <!-- Fallback para navegadores antiguos (PNG) -->
+     <!-- Fallback for old browser -->
      <link rel="icon" type="image/png" href="assets/favicon.png"> 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/styles/whyUs.css">
     <link rel="stylesheet" href="/styles/footer.css">
 
+    <!--Java Script funcionalities-->
     <script src="/js/Navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/js/chart.js"></script>
@@ -38,12 +39,12 @@
                 Spotter.ia
             </a>
 
-            <!-- Botón de menú para móviles -->
+            <!-- Menu button for moviles -->
             <button class="menu-toggle" id="mobile-menu">
                 ☰
             </button>
 
-            <!-- Menú principal -->
+            <!-- Main Menu -->
             <ul class="nav-links">
                 <li class="nav-item">
                     <a href="#">Product</a>
@@ -77,7 +78,7 @@
                 </li>
             </ul>
 
-            <!-- Botones de login/signup -->
+            <!-- login/signup Buttons -->
             <div class="auth-buttons">
                 <a href="#" class="login">Login</a>
                 <a href="#" class="signup">Get Started</a>
@@ -107,7 +108,7 @@
     <section class="user-panel">
         <div class="panel-container">
 
-            <!-- Sección Izquierda (Mensaje de Bienvenida) -->
+            <!-- Left side(Welcome message) -->
             <div class="user-message">
                 <p>Welcome to Spotter.ai,</p>
                 <p class="driver-id">Driver: <span id="userId">SPTR-5X1N7K</span>!</p>
@@ -121,7 +122,7 @@
                 <p>Need help optimizing your routes? <a href="#">Upgrade your plan</a> to unlock premium features.</p>
             </div>
 
-            <!-- Sección Derecha (Resumen del Usuario) -->
+            <!-- Right Side  (User summary) -->
             <div class="user-summary">
                 <div class="developer-toggle">
                     <span>I'm a Developer</span>
@@ -133,7 +134,7 @@
 
                 <h3>Hello, driver ID <span class="driver-id">SPTR-5X1N7K</span></h3>
 
-                <!-- Sección en Grid (4 columnas en desktop, 2 en móvil) -->
+                <!--  Grid Secction (4 colums on desktop, 2 on mobiles) -->
                 <div class="summary-grid">
                     <div class="summary-box">
                         <p class="title">YOUR TRIP SUMMARY</p>
@@ -153,7 +154,7 @@
                     </div>
                 </div>
 
-                <!-- Historial de Viajes -->
+                <!-- Trip History -->
                 <div class="trip-history">
                     <h4>Your Trip History</h4>
                     <div class="trip-grid">
@@ -171,7 +172,7 @@
                     </div>
                 </div>
 
-                <!-- Información de IP y Conexión -->
+                <!-- IP address -->
                 <div class="connection-info">
                     <div class="info-grid">
                         <div class="info-box">
@@ -188,21 +189,7 @@
                         </div>
                     </div>
 
-                    <!-- Panel JSON para el modo Developer -->
-                    <div class="developer-panel hidden" id="developerPanel">
-                        <pre>
-                        {
-                            "driverId": "SPTR-5X1N7K",
-                            "tripCount": 2,
-                            "lastLocation": "San Salvador, El Salvador",
-                            "loadedMiles": 435,
-                            "lastDelivery": "4 hours ago",
-                            "browser": "Chrome 112.0",
-                            "device": "Android",
-                            "firstSeenAt": "2025-02-13T03:54:18.835Z"
-                        }
-                    </pre>
-                    </div>
+                   
                 </div>
 
             </div>
@@ -269,7 +256,7 @@
     <!--Why us-->
     <section class="feature-section">
         <div class="feature-container">
-            <!-- Contenido principal -->
+            <!-- Main content -->
             <div class="feature-content">
                 <span class="badge">Why Spotter.ai</span>
                 <h1>The internet's most <span class="highlight">accurate</span> route optimizer</h1>
@@ -277,14 +264,14 @@
                     changes.</p>
                 <button class="cta-button">Learn More</button>
 
-                <!-- Gráfico -->
+                <!-- Chart -->
                 <div class="chart-container">
                     <canvas id="accuracyChart"></canvas>
                 </div>
             </div>
         </div>
 
-        <!-- Tarjetas a la derecha -->
+        <!-- Cards to the right -->
         <div class="feature-cards">
             <div class="card">
                 <span class="icon">🔍</span>
@@ -295,7 +282,7 @@
             </div>
             <div class="hover-container">
                 <div class="grid-pattern">
-                    <!-- Generamos los puntitos con JavaScript -->
+                    <!-- DIv generates dots that changes their color when user makes a hover -->
                 </div>
                 <div class="lupa" id="lupa"></div>
             </div>
@@ -324,7 +311,7 @@
     <!--Footer-->
     <footer class="site-footer">
         <div class="footer-container">
-            <!-- Logo y Newsletter -->
+            <!-- Logo & Newsletter -->
             <div class="footer-brand">
                 <a href="/" class="logo">
                     <svg width="40" height="30" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +333,7 @@
                 </div>
             </div>
 
-            <!-- Secciones de enlaces -->
+            <!-- Links sections -->
             <div class="footer-links">
                 <div class="footer-column">
                     <h4>Product</h4>
@@ -392,7 +379,7 @@
             </div>
         </div>
 
-        <!-- Copyright y redes sociales -->
+        <!-- Copyright y social media -->
         <div class="footer-bottom">
             <p>© 2024 Spotter.ai. All Rights Reserved.</p>
             <div class="footer-links-bottom">
@@ -410,7 +397,7 @@
         </div>
     </footer>
 
-    <!-- Importar FontAwesome para iconos -->
+    <!-- import FontAwesome to get icons from -->
     <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
 
     <!--Footer-->

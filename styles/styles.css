@@ -100,12 +100,12 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Mostrar dropdown al hacer hover */
+/* Show  dropdown when user makes hover */
 .nav-item:hover .dropdown {
     display: block;
 }
 
-/* Botones de Login / Signup */
+/*  Login / Signup */
 .auth-buttons {
     display: flex;
     gap: 10px;
