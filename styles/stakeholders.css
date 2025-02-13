@@ -1,0 +1,85 @@
+
+
+/* Sección de Empresas Confiables */
+.trusted-companies {
+    text-align: center;
+    padding: 40px 20px;
+    background: #FAFAFA;
+    overflow: hidden;
+}
+
+/* Contenedor centrado */
+.companies-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título */
+.trusted-companies h3 {
+    font-size: 1rem;
+    color: #757575;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid de Logos */
+.companies-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* Cada empresa con su logo y nombre */
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Logos */
+.company img {
+    max-width: 80px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+/* Efecto Hover */
+.company img:hover {
+    transform: scale(1.1);
+}
+
+/* Nombre de la empresa */
+.company span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .companies-grid {
+        flex-wrap: nowrap;
+        animation: marquee 10s linear infinite;
+    }
+}
+
+@media (max-width: 768px) {
+    .companies-grid {
+        flex-wrap: nowrap;
+        animation: marquee 15s linear infinite;
+    }
+}
+
+/* Animación Marquee */
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

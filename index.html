@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter - AI Technology for Logistics</title>
+     <!-- Favicon en formato SVG -->
+     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+     <!-- Fallback para navegadores antiguos (PNG) -->
+     <link rel="icon" type="image/png" href="assets/favicon.png"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/userPanel.css">
+    <link rel="stylesheet" href="/styles/stakeholders.css">
+    <link rel="stylesheet" href="/styles/whyUs.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
+    <script src="/js/Navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/chart.js"></script>
+    <script src="/js/UserPanel.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+               <img src="/assets/favicon.svg" alt="Spotter.ia">
+                Spotter.ia
+            </a>
+
+            <!-- Botón de menú para móviles -->
+            <button class="menu-toggle" id="mobile-menu">
+                ☰
+            </button>
+
+            <!-- Menú principal -->
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#">Product</a>
+                    <div class="dropdown">
+                        <a href="#">Feature 1</a>
+                        <a href="#">Feature 2</a>
+                        <a href="#">Feature 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Use Cases</a>
+                    <div class="dropdown">
+                        <a href="#">Logistics</a>
+                        <a href="#">AI Optimization</a>
+                        <a href="#">Fleet Management</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Resources</a>
+                    <div class="dropdown">
+                        <a href="#">Docs</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Community</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Developers</a>
+                </li>
+            </ul>
+
+            <!-- Botones de login/signup -->
+            <div class="auth-buttons">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signup">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Optimize <span class="highlight">Every Route</span></h1>
+            <p>
+                Maximize efficiency, reduce empty miles, and boost profits.
+                Let AI-powered logistics help you find the best loads, routes,
+                and opportunities in real-time.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="primary-btn">Get Started</a>
+                <a href="#" class="secondary-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section -->
+
+    <!--User panel-->
+
+    <section class="user-panel">
+        <div class="panel-container">
+
+            <!-- Sección Izquierda (Mensaje de Bienvenida) -->
+            <div class="user-message">
+                <p>Welcome to Spotter.ai,</p>
+                <p class="driver-id">Driver: <span id="userId">SPTR-5X1N7K</span>!</p>
+                <br>
+                <p>It's great to have you here.</p>
+                <br>
+                <p><strong>This is your second trip using Spotter.</strong></p>
+                <br>
+                <p>Your latest trip started in <strong>San Salvador, El Salvador</strong>.</p>
+                <br>
+                <p>Need help optimizing your routes? <a href="#">Upgrade your plan</a> to unlock premium features.</p>
+            </div>
+
+            <!-- Sección Derecha (Resumen del Usuario) -->
+            <div class="user-summary">
+                <div class="developer-toggle">
+                    <span>I'm a Developer</span>
+                    <label class="switch">
+                        <input type="checkbox" id="developerMode">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <h3>Hello, driver ID <span class="driver-id">SPTR-5X1N7K</span></h3>
+
+                <!-- Sección en Grid (4 columnas en desktop, 2 en móvil) -->
+                <div class="summary-grid">
+                    <div class="summary-box">
+                        <p class="title">YOUR TRIP SUMMARY</p>
+                        <p class="value">You have 2 active trips</p>
+                    </div>
+                    <div class="summary-box">
+                        <p class="title">INCOGNITO</p>
+                        <p class="value">0 sessions</p>
+                    </div>
+                    <div class="summary-box">
+                        <p class="title">IP ADDRESS</p>
+                        <p class="value">1 IP</p>
+                    </div>
+                    <div class="summary-box">
+                        <p class="title">GEOLOCATION</p>
+                        <p class="value">1 location</p>
+                    </div>
+                </div>
+
+                <!-- Historial de Viajes -->
+                <div class="trip-history">
+                    <h4>Your Trip History</h4>
+                    <div class="trip-grid">
+                        <div class="trip-card">
+                            <p><strong>Now:</strong> San Salvador, El Salvador</p>
+                            <p>Route: San Salvador → Houston, TX</p>
+                            <p>Miles: 2,340</p>
+                            <img src="assets/images/map-example.png" alt="Trip Map">
+                        </div>
+                        <div class="trip-card">
+                            <p><strong>Previous:</strong> Mexico City → Dallas, TX</p>
+                            <p>Miles: 1,800</p>
+                            <img src="assets/images/map-example2.png" alt="Trip Map">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información de IP y Conexión -->
+                <div class="connection-info">
+                    <div class="info-grid">
+                        <div class="info-box">
+                            <p><strong>IP Address:</strong> <span>190.87.165.207</span></p>
+                        </div>
+                        <div class="info-box">
+                            <p><strong>Browser:</strong> <span>Chrome 112.0</span></p>
+                        </div>
+                        <div class="info-box">
+                            <p><strong>Incognito Mode:</strong> <span class="secure">Not Detected</span></p>
+                        </div>
+                        <div class="info-box">
+                            <p><strong>VPN:</strong> <span class="secure">Not Detected</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Panel JSON para el modo Developer -->
+                    <div class="developer-panel hidden" id="developerPanel">
+                        <pre>
+                        {
+                            "driverId": "SPTR-5X1N7K",
+                            "tripCount": 2,
+                            "lastLocation": "San Salvador, El Salvador",
+                            "loadedMiles": 435,
+                            "lastDelivery": "4 hours ago",
+                            "browser": "Chrome 112.0",
+                            "device": "Android",
+                            "firstSeenAt": "2025-02-13T03:54:18.835Z"
+                        }
+                    </pre>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!--User panel-->
+
+    <!--Stakeholders-->
+    <section class="trusted-companies">
+        <h3>TRUSTED BY 6000+ COMPANIES OF ALL SIZES</h3>
+        <div class="companies-container">
+            <div class="companies-grid">
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=OADD2.7834053843371_1010YE20BGRGZFKGQA&w=32&h=32&o=6&pid=21.2"
+                        alt="Dropbox">
+                    <span>Dropbox</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.48f3bd76-db5a-4a2c-bc63-ea07c2e51e99&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
+                        alt="Ramp">
+                    <span>Ramp</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.be30e1bd-8032-480a-970f-10cd7ff70f49&w=17&h=17&o=6&pid=1.2"
+                        alt="Western Union">
+                    <span>Western Union</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.ea3d6cdf-1686-408e-a745-a8fb9b1230b0&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
+                        alt="Checkout.com">
+                    <span>Checkout</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.c36985fe-2065-451e-bbc3-7223442a3c08&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
+                        alt="US Bank">
+                    <span>US Bank</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.63438c26-ac6b-4e69-bac2-299fb4a4f553&w=17&h=17&o=6&pid=1.2"
+                        alt="Trustpilot">
+                    <span>Trustpilot</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.63438c26-ac6b-4e69-bac2-299fb4a4f553&w=17&h=17&o=6&pid=1.2"
+                        alt="Rockstar">
+                    <span>Rockstar</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.21e3026f-1c6a-465a-ac18-03e76f45d8cc&w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2"
+                        alt="Binance">
+                    <span>Binance</span>
+                </div>
+                <div class="company">
+                    <img src="https://th.bing.com/th?id=ODLS.699c5d73-1f1a-4c76-87fa-af9787fd40df&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
+                        alt="TikTok">
+                    <span>TikTok</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Stakeholders-->
+
+    <!--Why us-->
+    <section class="feature-section">
+        <div class="feature-container">
+            <!-- Contenido principal -->
+            <div class="feature-content">
+                <span class="badge">Why Spotter.ai</span>
+                <h1>The internet's most <span class="highlight">accurate</span> route optimizer</h1>
+                <p><strong>Industry-leading accuracy</strong> that lasts for months or years, even with dynamic route
+                    changes.</p>
+                <button class="cta-button">Learn More</button>
+
+                <!-- Gráfico -->
+                <div class="chart-container">
+                    <canvas id="accuracyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjetas a la derecha -->
+        <div class="feature-cards">
+            <div class="card">
+                <span class="icon">🔍</span>
+                <div class="card-content">
+                    <h3>Any vehicle, any route.</h3>
+                    <p>Optimize trucking routes dynamically across different terrains and conditions.</p>
+                </div>
+            </div>
+            <div class="hover-container">
+                <div class="grid-pattern">
+                    <!-- Generamos los puntitos con JavaScript -->
+                </div>
+                <div class="lupa" id="lupa"></div>
+            </div>
+
+
+
+            <div class="card">
+                <span class="icon">🛡️</span>
+                <div class="card-content">
+                    <h3>Identify all bottlenecks.</h3>
+                    <p>Detect slow zones, high traffic areas, and improve delivery efficiency.</p>
+                </div>
+            </div>
+            <div class="card">
+                <span class="icon">🚛</span>
+                <div class="card-content">
+                    <h3>Optimize fleet performance.</h3>
+                    <p>Enhance driver efficiency and minimize downtime through AI-driven logistics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Why us-->
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Logo y Newsletter -->
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <svg width="40" height="30" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="15" r="10" fill="#FF4F61" />
+                        <circle cx="20" cy="35" r="10" fill="#008080" />
+                        <circle cx="40" cy="35" r="10" fill="#B2D6D6" />
+                        <circle cx="60" cy="35" r="10" fill="#B2D6D6" />
+                    </svg>
+                    <span class="logo-title">Spotter.ia</span>
+                </a> 
+                <p>AI-powered dispatching solutions to optimize truck routes and improve logistics efficiency.</p>
+
+                <div class="newsletter">
+                    <p>Subscribe to our <span class="highlight">newsletter_</span></p>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Email address*" />
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secciones de enlaces -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Route Optimization</a></li>
+                        <li><a href="#">Fleet Management</a></li>
+                        <li><a href="#">Smart Dispatch</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Use Cases</h4>
+                    <ul>
+                        <li><a href="#">Real-Time Tracking</a></li>
+                        <li><a href="#">Fuel Optimization</a></li>
+                        <li><a href="#">Logistics AI</a></li>
+                        <li><a href="#">Driver Assistance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers <span class="hiring-badge">We're hiring</span></a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright y redes sociales -->
+        <div class="footer-bottom">
+            <p>© 2024 Spotter.ai. All Rights Reserved.</p>
+            <div class="footer-links-bottom">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-code"></i></a>
+            </div>
+            <div class="system-status">
+                <span class="status-dot"></span> <span>All systems normal</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Importar FontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+    <!--Footer-->
+</body>
+
+</html>
